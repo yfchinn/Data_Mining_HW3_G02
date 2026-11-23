@@ -1,0 +1,138 @@
+{
+  "recipe_diagnostics": {
+    "total_raw_recipes": 231637,
+    "unique_recipe_ids": 231637,
+    "missing_name": 1,
+    "empty_ingredients": 0,
+    "invalid_ingredients_format": 0,
+    "minutes_le_zero": 1094,
+    "minutes_gt_1440": 2000,
+    "n_steps_le_zero": 1
+  },
+  "raw_interaction_diagnostics": {
+    "date_min": "2000-01-25",
+    "date_max": "2018-12-20",
+    "invalid_dates": 0,
+    "orphan_interactions_not_in_recipes": 0,
+    "duplicate_user_recipe_rows": 0,
+    "duplicate_user_recipe_pairs": 0,
+    "rating_distribution": {
+      "0": {
+        "count": 60847,
+        "pct": 5.37
+      },
+      "1": {
+        "count": 12818,
+        "pct": 1.13
+      },
+      "2": {
+        "count": 14123,
+        "pct": 1.25
+      },
+      "3": {
+        "count": 40855,
+        "pct": 3.61
+      },
+      "4": {
+        "count": 187360,
+        "pct": 16.55
+      },
+      "5": {
+        "count": 816364,
+        "pct": 72.09
+      }
+    }
+  },
+  "sensitivity_table": [
+    {
+      "setting": "0. Raw (all interactions)",
+      "users": 226570,
+      "items": 231637,
+      "interactions": 1132367,
+      "sparsity_pct": 99.9978,
+      "avg_inter_per_user": 5.0,
+      "avg_inter_per_item": 4.89
+    },
+    {
+      "setting": "1. Valid recipe + dedup (keep latest)",
+      "users": 226570,
+      "items": 231637,
+      "interactions": 1132367,
+      "sparsity_pct": 99.9978,
+      "avg_inter_per_user": 5.0,
+      "avg_inter_per_item": 4.89
+    },
+    {
+      "setting": "2a. Positives (rating >= 4)",
+      "users": 180310,
+      "items": 217565,
+      "interactions": 1003724,
+      "sparsity_pct": 99.9974,
+      "avg_inter_per_user": 5.57,
+      "avg_inter_per_item": 4.61
+    },
+    {
+      "setting": "2b. Positives (rating == 5)",
+      "users": 158850,
+      "items": 186861,
+      "interactions": 816364,
+      "sparsity_pct": 99.9972,
+      "avg_inter_per_user": 5.14,
+      "avg_inter_per_item": 4.37
+    },
+    {
+      "setting": "3a. rating>=4, user>=5 (one-shot, item>=1)",
+      "users": 20751,
+      "items": 199235,
+      "interactions": 795285,
+      "sparsity_pct": 99.9808,
+      "avg_inter_per_user": 38.33,
+      "avg_inter_per_item": 3.99
+    },
+    {
+      "setting": "3b. rating>=4, user>=5, item>=2 (one-shot)",
+      "users": 20748,
+      "items": 110696,
+      "interactions": 706746,
+      "sparsity_pct": 99.9692,
+      "avg_inter_per_user": 34.06,
+      "avg_inter_per_item": 6.38
+    },
+    {
+      "setting": "3c. rating>=4, user>=10 (one-shot, item>=1)",
+      "users": 11280,
+      "items": 193553,
+      "interactions": 733817,
+      "sparsity_pct": 99.9664,
+      "avg_inter_per_user": 65.05,
+      "avg_inter_per_item": 3.79
+    },
+    {
+      "setting": "4a. rating>=4, 5-core (iterative)",
+      "users": 16043,
+      "items": 37851,
+      "interactions": 498607,
+      "sparsity_pct": 99.9179,
+      "avg_inter_per_user": 31.08,
+      "avg_inter_per_item": 13.17
+    },
+    {
+      "setting": "4b. rating>=4, 10-core (iterative)",
+      "users": 6707,
+      "items": 11607,
+      "interactions": 273915,
+      "sparsity_pct": 99.6481,
+      "avg_inter_per_user": 40.84,
+      "avg_inter_per_item": 23.6
+    },
+    {
+      "setting": "4c. rating>=4, 20-core (iterative)",
+      "users": 1881,
+      "items": 2252,
+      "interactions": 89719,
+      "sparsity_pct": 97.882,
+      "avg_inter_per_user": 47.7,
+      "avg_inter_per_item": 39.84
+    }
+  ]
+}

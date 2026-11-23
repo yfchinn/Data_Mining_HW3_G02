@@ -1,0 +1,110 @@
+{
+  "item_long_tail_positives_ge4": {
+    "total_entities": 217565,
+    "total_interactions": 1003724,
+    "mean": 4.61,
+    "median": 2.0,
+    "p90": 9.0,
+    "max": 1347,
+    "top_1pct_share_pct": 22.76,
+    "top_5pct_share_pct": 42.34,
+    "top_10pct_share_pct": 54.05,
+    "top_20pct_share_pct": 67.85,
+    "lt_2_inter_count": 90187,
+    "lt_2_inter_pct": 41.45,
+    "lt_5_inter_count": 169640,
+    "lt_5_inter_pct": 77.97,
+    "lt_10_inter_count": 198819,
+    "lt_10_inter_pct": 91.38,
+    "lt_20_inter_count": 210675,
+    "lt_20_inter_pct": 96.83
+  },
+  "user_activity_positives_ge4": {
+    "total_entities": 180310,
+    "total_interactions": 1003724,
+    "mean": 5.57,
+    "median": 1.0,
+    "p90": 5.0,
+    "max": 7661,
+    "top_1pct_share_pct": 51.35,
+    "top_5pct_share_pct": 70.67,
+    "top_10pct_share_pct": 77.88,
+    "top_20pct_share_pct": 84.0,
+    "lt_2_inter_count": 127946,
+    "lt_2_inter_pct": 70.96,
+    "lt_5_inter_count": 159559,
+    "lt_5_inter_pct": 88.49,
+    "lt_10_inter_count": 169030,
+    "lt_10_inter_pct": 93.74,
+    "lt_20_inter_count": 174259,
+    "lt_20_inter_pct": 96.64
+  },
+  "ingredient_statistics": {
+    "unique_raw_ingredients": 14942,
+    "mean_ingredients_per_recipe": 9.05,
+    "median_ingredients_per_recipe": 9.0,
+    "max_ingredients_per_recipe": 43,
+    "top_15_ingredients": [
+      [
+        "salt",
+        85746
+      ],
+      [
+        "butter",
+        54975
+      ],
+      [
+        "sugar",
+        44535
+      ],
+      [
+        "onion",
+        39065
+      ],
+      [
+        "water",
+        34914
+      ],
+      [
+        "eggs",
+        33761
+      ],
+      [
+        "olive oil",
+        32822
+      ],
+      [
+        "flour",
+        26266
+      ],
+      [
+        "milk",
+        25786
+      ],
+      [
+        "garlic cloves",
+        25748
+      ],
+      [
+        "pepper",
+        22319
+      ],
+      [
+        "brown sugar",
+        18655
+      ],
+      [
+        "garlic",
+        18087
+      ],
+      [
+        "all-purpose flour",
+        17659
+      ],
+      [
+        "baking powder",
+        17504
+      ]
+    ]
+  }
+}

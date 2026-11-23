@@ -1,0 +1,11 @@
+setting,users,items,interactions,sparsity_pct,avg_inter_per_user,avg_inter_per_item
+0. Raw (all interactions),226570,231637,1132367,99.9978,5.0,4.89
+1. Valid recipe + dedup (keep latest),226570,231637,1132367,99.9978,5.0,4.89
+2a. Positives (rating >= 4),180310,217565,1003724,99.9974,5.57,4.61
+2b. Positives (rating == 5),158850,186861,816364,99.9972,5.14,4.37
+"3a. rating>=4, user>=5 (one-shot, item>=1)",20751,199235,795285,99.9808,38.33,3.99
+"3b. rating>=4, user>=5, item>=2 (one-shot)",20748,110696,706746,99.9692,34.06,6.38
+"3c. rating>=4, user>=10 (one-shot, item>=1)",11280,193553,733817,99.9664,65.05,3.79
+"4a. rating>=4, 5-core (iterative)",16043,37851,498607,99.9179,31.08,13.17
+"4b. rating>=4, 10-core (iterative)",6707,11607,273915,99.6481,40.84,23.6
+"4c. rating>=4, 20-core (iterative)",1881,2252,89719,97.882,47.7,39.84

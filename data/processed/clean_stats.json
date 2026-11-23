@@ -1,0 +1,92 @@
+{
+  "config": {
+    "min_rating": 4,
+    "min_user_inter": 5,
+    "min_item_inter": 5,
+    "keep_review": false,
+    "kcore_iterations_to_converge": 5
+  },
+  "recipe_cleaning": {
+    "raw_recipes": 231637,
+    "valid_recipes_before_kcore": 231635,
+    "final_recipes_after_kcore": 37851
+  },
+  "step_by_step_stats": [
+    {
+      "step": "0. Raw interactions",
+      "users": 226570,
+      "items": 231637,
+      "interactions": 1132367,
+      "sparsity_pct": 99.9978,
+      "avg_inter_per_user": 5.0,
+      "avg_inter_per_item": 4.89,
+      "date_min": "2000-01-25",
+      "date_max": "2018-12-20"
+    },
+    {
+      "step": "1. Align with valid recipes & non-null dates",
+      "users": 226569,
+      "items": 231635,
+      "interactions": 1132364,
+      "sparsity_pct": 99.9978,
+      "avg_inter_per_user": 5.0,
+      "avg_inter_per_item": 4.89,
+      "date_min": "2000-01-25",
+      "date_max": "2018-12-20"
+    },
+    {
+      "step": "2. Deduplicate (user_id, recipe_id) keep latest",
+      "users": 226569,
+      "items": 231635,
+      "interactions": 1132364,
+      "sparsity_pct": 99.9978,
+      "avg_inter_per_user": 5.0,
+      "avg_inter_per_item": 4.89,
+      "date_min": "2000-01-25",
+      "date_max": "2018-12-20"
+    },
+    {
+      "step": "3. Positive interactions (rating >= 4)",
+      "users": 180310,
+      "items": 217564,
+      "interactions": 1003722,
+      "sparsity_pct": 99.9974,
+      "avg_inter_per_user": 5.57,
+      "avg_inter_per_item": 4.61,
+      "date_min": "2000-01-25",
+      "date_max": "2018-12-20"
+    },
+    {
+      "step": "4. Iterative k-core (user >= 5, item >= 5)",
+      "users": 16043,
+      "items": 37851,
+      "interactions": 498607,
+      "sparsity_pct": 99.9179,
+      "avg_inter_per_user": 31.08,
+      "avg_inter_per_item": 13.17,
+      "date_min": "2000-09-12",
+      "date_max": "2018-12-18"
+    }
+  ],
+  "cleaned_yearly_interaction_counts": {
+    "2000": 4,
+    "2001": 603,
+    "2002": 9795,
+    "2003": 16189,
+    "2004": 24268,
+    "2005": 36512,
+    "2006": 47859,
+    "2007": 73227,
+    "2008": 83625,
+    "2009": 74829,
+    "2010": 48168,
+    "2011": 27514,
+    "2012": 20507,
+    "2013": 15832,
+    "2014": 8553,
+    "2015": 3995,
+    "2016": 2869,
+    "2017": 2767,
+    "2018": 1491
+  }
+}
