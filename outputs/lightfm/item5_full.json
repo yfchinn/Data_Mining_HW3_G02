@@ -1,0 +1,109 @@
+{
+  "tag": "item5_full",
+  "config": {
+    "data_dir": "data/processed_sec4_item5",
+    "variant": "full",
+    "tag": "item5_full",
+    "out_dir": "outputs/lightfm",
+    "loss": "warp",
+    "no_components": 64,
+    "learning_rate": 0.05,
+    "item_alpha": 0.0,
+    "user_alpha": 0.0,
+    "normalize": false,
+    "max_epochs": 50,
+    "eval_every": 5,
+    "patience": 2,
+    "threads": 4,
+    "seed": 42
+  },
+  "data": {
+    "users": 16043,
+    "items": 37851,
+    "train_interactions": 466521,
+    "valid_users": 16043,
+    "candidates_per_user": 101,
+    "n_item_features": 41223
+  },
+  "best_epoch": 15,
+  "valid": {
+    "HR@10": 0.4353,
+    "NDCG@10": 0.2711,
+    "MRR": 0.2399,
+    "n": 16043,
+    "Coverage@10": 0.8283
+  },
+  "valid_by_item_popularity": {
+    "0 (unseen)": {
+      "HR@10": 0.0,
+      "NDCG@10": 0.0,
+      "MRR": 0.0155,
+      "n": 2
+    },
+    "1-2": {
+      "HR@10": 0.1385,
+      "NDCG@10": 0.0886,
+      "MRR": 0.0943,
+      "n": 65
+    },
+    "3-5": {
+      "HR@10": 0.0761,
+      "NDCG@10": 0.0327,
+      "MRR": 0.0435,
+      "n": 2063
+    },
+    "6-20": {
+      "HR@10": 0.2105,
+      "NDCG@10": 0.099,
+      "MRR": 0.0912,
+      "n": 5502
+    },
+    "21+": {
+      "HR@10": 0.6728,
+      "NDCG@10": 0.4436,
+      "MRR": 0.3865,
+      "n": 8411
+    }
+  },
+  "cost": {
+    "train_seconds_total": 56.8,
+    "inference_ms_per_user": 0.022
+  },
+  "history": [
+    {
+      "epoch": 5,
+      "HR@10": 0.4269,
+      "NDCG@10": 0.2631,
+      "MRR": 0.2324,
+      "n": 16043
+    },
+    {
+      "epoch": 10,
+      "HR@10": 0.4347,
+      "NDCG@10": 0.2701,
+      "MRR": 0.2387,
+      "n": 16043
+    },
+    {
+      "epoch": 15,
+      "HR@10": 0.4353,
+      "NDCG@10": 0.2711,
+      "MRR": 0.2399,
+      "n": 16043
+    },
+    {
+      "epoch": 20,
+      "HR@10": 0.433,
+      "NDCG@10": 0.2696,
+      "MRR": 0.2389,
+      "n": 16043
+    },
+    {
+      "epoch": 25,
+      "HR@10": 0.4346,
+      "NDCG@10": 0.2688,
+      "MRR": 0.2372,
+      "n": 16043
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "user_id": 5362,
+  "u": 32,
+  "train": [
+    {
+      "recipe_id": 13452,
+      "i": 3129,
+      "date": "2001-11-19",
+      "rating": 5
+    },
+    {
+      "recipe_id": 32147,
+      "i": 10147,
+      "date": "2008-06-01",
+      "rating": 5
+    },
+    {
+      "recipe_id": 390686,
+      "i": 98606,
+      "date": "2010-07-21",
+      "rating": 4
+    }
+  ],
+  "valid": [
+    {
+      "recipe_id": 79944,
+      "i": 26720
+    }
+  ],
+  "test": [
+    {
+      "recipe_id": 153412,
+      "i": 50028
+    }
+  ],
+  "example_recipe": {
+    "recipe_id": 13452,
+    "i": 3129,
+    "name": "white bean and pasta soup with sun dried tomatoes",
+    "raw_ingredients": [
+      "dried white bean",
+      "olive oil",
+      "yellow onions",
+      "carrots",
+      "fennel",
+      "garlic cloves",
+      "dried red pepper flakes",
+      "bay leaves",
+      "chicken stock",
+      "bow tie pasta",
+      "sun-dried tomato",
+      "fresh parsley",
+      "parmesan cheese"
+    ],
+    "lightfm_feature_columns": [
+      3129,
+      110281,
+      110520,
+      110788,
+      110937,
+      111650,
+      111676,
+      111860,
+      112080,
+      112301,
+      113615,
+      113733,
+      114987,
+      115653
+    ],
+    "lightfm_features": [
+      "recipe_13452",
+      "ingr:bay leaves",
+      "ingr:bow tie pasta",
+      "ingr:carrots",
+      "ingr:chicken stock",
+      "ingr:dried red pepper flakes",
+      "ingr:dried white bean",
+      "ingr:fennel",
+      "ingr:fresh parsley",
+      "ingr:garlic cloves",
+      "ingr:olive oil",
+      "ingr:parmesan cheese",
+      "ingr:sun-dried tomato",
+      "ingr:yellow onions"
+    ]
+  }
+}

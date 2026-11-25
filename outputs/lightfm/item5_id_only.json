@@ -1,0 +1,95 @@
+{
+  "tag": "item5_id_only",
+  "config": {
+    "data_dir": "data/processed_sec4_item5",
+    "variant": "id_only",
+    "tag": "item5_id_only",
+    "out_dir": "outputs/lightfm",
+    "loss": "warp",
+    "no_components": 64,
+    "learning_rate": 0.05,
+    "item_alpha": 0.0,
+    "user_alpha": 0.0,
+    "normalize": false,
+    "max_epochs": 50,
+    "eval_every": 5,
+    "patience": 2,
+    "threads": 4,
+    "seed": 42
+  },
+  "data": {
+    "users": 16043,
+    "items": 37851,
+    "train_interactions": 466521,
+    "valid_users": 16043,
+    "candidates_per_user": 101,
+    "n_item_features": null
+  },
+  "best_epoch": 5,
+  "valid": {
+    "HR@10": 0.4957,
+    "NDCG@10": 0.3164,
+    "MRR": 0.2785,
+    "n": 16043,
+    "Coverage@10": 0.4394
+  },
+  "valid_by_item_popularity": {
+    "0 (unseen)": {
+      "HR@10": 0.0,
+      "NDCG@10": 0.0,
+      "MRR": 0.0583,
+      "n": 2
+    },
+    "1-2": {
+      "HR@10": 0.1538,
+      "NDCG@10": 0.1538,
+      "MRR": 0.1659,
+      "n": 65
+    },
+    "3-5": {
+      "HR@10": 0.0121,
+      "NDCG@10": 0.0063,
+      "MRR": 0.0236,
+      "n": 2063
+    },
+    "6-20": {
+      "HR@10": 0.122,
+      "NDCG@10": 0.048,
+      "MRR": 0.0583,
+      "n": 5502
+    },
+    "21+": {
+      "HR@10": 0.8616,
+      "NDCG@10": 0.5694,
+      "MRR": 0.4859,
+      "n": 8411
+    }
+  },
+  "cost": {
+    "train_seconds_total": 20.9,
+    "inference_ms_per_user": 0.011
+  },
+  "history": [
+    {
+      "epoch": 5,
+      "HR@10": 0.4957,
+      "NDCG@10": 0.3164,
+      "MRR": 0.2785,
+      "n": 16043
+    },
+    {
+      "epoch": 10,
+      "HR@10": 0.4775,
+      "NDCG@10": 0.305,
+      "MRR": 0.27,
+      "n": 16043
+    },
+    {
+      "epoch": 15,
+      "HR@10": 0.4609,
+      "NDCG@10": 0.2943,
+      "MRR": 0.2618,
+      "n": 16043
+    }
+  ]
+}

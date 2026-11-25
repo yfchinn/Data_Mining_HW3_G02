@@ -1,0 +1,95 @@
+{
+  "tag": "item2_id_only",
+  "config": {
+    "data_dir": "data/processed_sec4_item2",
+    "variant": "id_only",
+    "tag": "item2_id_only",
+    "out_dir": "outputs/lightfm",
+    "loss": "warp",
+    "no_components": 64,
+    "learning_rate": 0.05,
+    "item_alpha": 0.0,
+    "user_alpha": 0.0,
+    "normalize": false,
+    "max_epochs": 50,
+    "eval_every": 5,
+    "patience": 2,
+    "threads": 4,
+    "seed": 42
+  },
+  "data": {
+    "users": 19347,
+    "items": 110021,
+    "train_interactions": 662241,
+    "valid_users": 19347,
+    "candidates_per_user": 101,
+    "n_item_features": null
+  },
+  "best_epoch": 5,
+  "valid": {
+    "HR@10": 0.5303,
+    "NDCG@10": 0.3597,
+    "MRR": 0.3218,
+    "n": 19347,
+    "Coverage@10": 0.3251
+  },
+  "valid_by_item_popularity": {
+    "0 (unseen)": {
+      "HR@10": 0.0,
+      "NDCG@10": 0.0,
+      "MRR": 0.014,
+      "n": 129
+    },
+    "1-2": {
+      "HR@10": 0.0111,
+      "NDCG@10": 0.0051,
+      "MRR": 0.0209,
+      "n": 3240
+    },
+    "3-5": {
+      "HR@10": 0.0537,
+      "NDCG@10": 0.0222,
+      "MRR": 0.0425,
+      "n": 2684
+    },
+    "6-20": {
+      "HR@10": 0.4575,
+      "NDCG@10": 0.1861,
+      "MRR": 0.1324,
+      "n": 5145
+    },
+    "21+": {
+      "HR@10": 0.9481,
+      "NDCG@10": 0.7272,
+      "MRR": 0.6578,
+      "n": 8149
+    }
+  },
+  "cost": {
+    "train_seconds_total": 28.4,
+    "inference_ms_per_user": 0.018
+  },
+  "history": [
+    {
+      "epoch": 5,
+      "HR@10": 0.5303,
+      "NDCG@10": 0.3597,
+      "MRR": 0.3218,
+      "n": 19347
+    },
+    {
+      "epoch": 10,
+      "HR@10": 0.5195,
+      "NDCG@10": 0.3506,
+      "MRR": 0.3139,
+      "n": 19347
+    },
+    {
+      "epoch": 15,
+      "HR@10": 0.5059,
+      "NDCG@10": 0.3398,
+      "MRR": 0.3046,
+      "n": 19347
+    }
+  ]
+}

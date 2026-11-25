@@ -1,0 +1,109 @@
+{
+  "tag": "item2_full",
+  "config": {
+    "data_dir": "data/processed_sec4_item2",
+    "variant": "full",
+    "tag": "item2_full",
+    "out_dir": "outputs/lightfm",
+    "loss": "warp",
+    "no_components": 64,
+    "learning_rate": 0.05,
+    "item_alpha": 0.0,
+    "user_alpha": 0.0,
+    "normalize": false,
+    "max_epochs": 50,
+    "eval_every": 5,
+    "patience": 2,
+    "threads": 4,
+    "seed": 42
+  },
+  "data": {
+    "users": 19347,
+    "items": 110021,
+    "train_interactions": 662241,
+    "valid_users": 19347,
+    "candidates_per_user": 101,
+    "n_item_features": 115678
+  },
+  "best_epoch": 15,
+  "valid": {
+    "HR@10": 0.4689,
+    "NDCG@10": 0.3102,
+    "MRR": 0.2789,
+    "n": 19347,
+    "Coverage@10": 0.5914
+  },
+  "valid_by_item_popularity": {
+    "0 (unseen)": {
+      "HR@10": 0.0155,
+      "NDCG@10": 0.006,
+      "MRR": 0.0229,
+      "n": 129
+    },
+    "1-2": {
+      "HR@10": 0.0559,
+      "NDCG@10": 0.0221,
+      "MRR": 0.0356,
+      "n": 3240
+    },
+    "3-5": {
+      "HR@10": 0.1513,
+      "NDCG@10": 0.0707,
+      "MRR": 0.0725,
+      "n": 2684
+    },
+    "6-20": {
+      "HR@10": 0.3615,
+      "NDCG@10": 0.1821,
+      "MRR": 0.1519,
+      "n": 5145
+    },
+    "21+": {
+      "HR@10": 0.8127,
+      "NDCG@10": 0.5894,
+      "MRR": 0.5278,
+      "n": 8149
+    }
+  },
+  "cost": {
+    "train_seconds_total": 85.5,
+    "inference_ms_per_user": 0.041
+  },
+  "history": [
+    {
+      "epoch": 5,
+      "HR@10": 0.459,
+      "NDCG@10": 0.2982,
+      "MRR": 0.2667,
+      "n": 19347
+    },
+    {
+      "epoch": 10,
+      "HR@10": 0.4689,
+      "NDCG@10": 0.3099,
+      "MRR": 0.2783,
+      "n": 19347
+    },
+    {
+      "epoch": 15,
+      "HR@10": 0.4689,
+      "NDCG@10": 0.3102,
+      "MRR": 0.2789,
+      "n": 19347
+    },
+    {
+      "epoch": 20,
+      "HR@10": 0.4689,
+      "NDCG@10": 0.3099,
+      "MRR": 0.2784,
+      "n": 19347
+    },
+    {
+      "epoch": 25,
+      "HR@10": 0.4676,
+      "NDCG@10": 0.3096,
+      "MRR": 0.2785,
+      "n": 19347
+    }
+  ]
+}
