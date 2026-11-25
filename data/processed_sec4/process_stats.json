@@ -1,0 +1,35 @@
+{
+  "config": {
+    "clean_dir": "data/processed",
+    "out_dir": "data/processed_sec4",
+    "min_ingr_freq": 5,
+    "n_neg": 100,
+    "seed": 42
+  },
+  "input": {
+    "users": 16043,
+    "recipes": 37851,
+    "interactions": 498607,
+    "min_per_user": 5,
+    "min_per_recipe": 5
+  },
+  "split": {
+    "train": 466521,
+    "valid": 16043,
+    "test": 16043,
+    "min_train_per_user": 3,
+    "valid_items_unseen_in_train": 2,
+    "test_items_unseen_in_train": 10
+  },
+  "ingredients": {
+    "raw_unique_lowercased": 7737,
+    "unique_after_normalization": 7737,
+    "vocab_size_freq_ge_5": 3372,
+    "recipes_with_no_kept_ingredient": 6,
+    "mean_kept_ingredients_per_recipe": 8.52
+  },
+  "lightfm_item_features_shape": [
+    37851,
+    41223
+  ]
+}

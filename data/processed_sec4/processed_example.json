@@ -1,0 +1,79 @@
+{
+  "user_id": 3794,
+  "u": 17,
+  "train": [
+    {
+      "recipe_id": 191,
+      "i": 15,
+      "date": "2000-12-15",
+      "rating": 5
+    },
+    {
+      "recipe_id": 13251,
+      "i": 1328,
+      "date": "2002-06-20",
+      "rating": 5
+    },
+    {
+      "recipe_id": 1042,
+      "i": 98,
+      "date": "2002-07-29",
+      "rating": 5
+    }
+  ],
+  "valid": [
+    {
+      "recipe_id": 31244,
+      "i": 4465
+    }
+  ],
+  "test": [
+    {
+      "recipe_id": 32045,
+      "i": 4615
+    }
+  ],
+  "example_recipe": {
+    "recipe_id": 191,
+    "i": 15,
+    "name": "chilies corn muffins",
+    "raw_ingredients": [
+      "all-purpose flour",
+      "cornmeal",
+      "sugar",
+      "brown sugar",
+      "baking powder",
+      "salt",
+      "skim milk",
+      "vegetable oil",
+      "egg",
+      "green chilies"
+    ],
+    "lightfm_feature_columns": [
+      15,
+      37886,
+      37981,
+      38177,
+      38606,
+      38867,
+      39301,
+      40540,
+      40653,
+      40803,
+      41053
+    ],
+    "lightfm_features": [
+      "recipe_191",
+      "ingr:all-purpose flour",
+      "ingr:baking powder",
+      "ingr:brown sugar",
+      "ingr:cornmeal",
+      "ingr:egg",
+      "ingr:green chilies",
+      "ingr:salt",
+      "ingr:skim milk",
+      "ingr:sugar",
+      "ingr:vegetable oil"
+    ]
+  }
+}
